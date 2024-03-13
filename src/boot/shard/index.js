@@ -15,7 +15,7 @@ async function run() {
     totalClusters: config.features.SHARD_SYSTEM.totalClusters, // you can set to every number you want but for save mode, use 'auto' option
     shardsPerClusters: config.features.SHARD_SYSTEM.shardsPerClusters,
     mode: config.features.SHARD_SYSTEM.mode, // you can also choose "worker"
-    token: config.TOKEN,
+    token: config.bot.TOKEN,
   });
 
   await manager.on("clusterCreate", (cluster) =>
